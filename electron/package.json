@@ -1,0 +1,19 @@
+{
+  "name": "econtract",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron.js",
+  "productName": "E-Contract",
+  "devDependencies": {
+    "asar": "^0.14.6",
+    "electron": "^2.0.17",
+    "electron-builder": "^20.38.5",
+    "electron-packager": "^13.0.1"
+  },
+  "scripts": {
+    "web": "webpack-dev-server --content-base app/web/public --hot --watch --history-api-fallback --useLocalIp --host 0.0.0.0",
+    "electron": "electron ./electron.js",
+    "mac-build": "electron-packager . \"e-contract\" --overwrite --ignore=\"node_modules\" --platform=darwin --arch=x64 --prune=production --out=release-builds",
+    "win-build": "electron-packager . \"e-contract\" --overwrite --ignore=\"node_modules\" --platform=win32 --arch=ia32 --prune=production --asar --out=release-builds --version-string.ProductName=\"E-Contract\""
+  }
+}
