@@ -9,7 +9,7 @@
     "babel-cli": "6.26.0",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "electron": "^2.0.17",
+    "electron": "^9.1.0",
     "electron-builder": "^20.39.0",
     "electron-packager": "^13.0.1",
     "jest": "^22.4.4",
