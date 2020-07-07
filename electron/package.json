@@ -6,7 +6,7 @@
   "productName": "E-Contract",
   "devDependencies": {
     "asar": "^0.14.6",
-    "electron": "^2.0.17",
+    "electron": "^9.1.0",
     "electron-builder": "^20.38.5",
     "electron-packager": "^13.0.1"
   },
